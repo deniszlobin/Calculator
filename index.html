@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+    <style>
+      div{
+        display: block;
+      }
+      #calculator{
+        width: 200px;
+        padding: 2px;
+        border: 1px solid black;
+        padding-bottom: 4px;
+        margin: auto;
+        font-size: 0;
+        display: block;
+        position: relative;
+        background: #DCDCDC;
+      }
+      #display{
+        display: block;
+        width: 185px;
+        height: 30px;
+        border: 1px solid #000;
+        margin: 4px;
+        text-align: right;
+        outline: 0;
+        background: white;
+        padding-right: 3px;
+        font-style: normal;
+        font-weight: bolder;
+        font-size: large;
+        color: black;
+      }
+      #button_C{
+        position: absolute;
+        left: 8px;
+        top: 8px;
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+        line-height: 20px;
+        display: inline-block;
+        cursor: pointer;
+        border: 1px solid #000;
+        margin: 4px;
+        text-align: center;
+        user-select:none;
+        font-weight: bold;
+      }
+      .button{
+        width: 40px;
+        height: 30px;
+        line-height: 30px;
+        display: inline-block;
+        font-weight: bolder;
+        border: 1px solid #000;
+        margin: 4px;
+        font-size: 16px;
+        text-align: center;
+        user-select:none;
+        
+      }
+      .num{
+        background:white;
+        font-style:normal;
+      }
+      
+      
+      .num:hover{
+        background: #a5a4a4d8;
+      }
+      .num:active{
+        background:rgb(58, 57, 57);
+        
+      }
+      .symb{
+        background: #F0F8FF;
+        
+      }
+      .symb:hover{
+        background: #778899;
+      }
+      .symb:active{
+        background:#384757;
+      }
+      .equally{
+        background: #87CEEB;
+      }
+      .equally:hover{
+        background: #1E90FF;
+      }
+      .equally:active{
+        background: #4169E1;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div id="calculator">
+      <input type="text" id="display" disabled>
+      <div id="button_C" class="symb" title="Очистить" data-type="C">C</div>
+      <div class="button num" data-type="7">7</div>
+      <div class="button num" data-type="8">8</div>
+      <div class="button num" data-type="9">9</div>
+      <div class="button symb" data-type="⌫">⌫</div>
+      
+      <div class="button num" data-type="4">4</div>
+      <div class="button num" data-type="5">5</div>
+      <div class="button num" data-type="6">6</div>
+      <div class="button symb" data-type="+">+</div>
+      
+      
+      <div class="button num" data-type="1">1</div>
+      <div class="button num" data-type="2">2</div>
+      <div class="button num" data-type="3">3</div>
+      <div class="button symb" data-type="-">-</div>
+      
+      <div class="button symb" data-type="(">(</div>
+      
+      <div class="button num" data-type="0">0</div>
+      <div class="button symb" data-type=")">)</div>
+      <div class="button symb" data-type="*">×</div>
+      
+      <div class="button symb" data-type="x²">x²</div>
+      <div class="button symb" data-type=".">.</div>
+      <div class="button equally" data-type="=">=</div>
+      
+      <div class="button symb" data-type="/">÷</div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
